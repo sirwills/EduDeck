@@ -11,7 +11,7 @@ const Signing = () => {
 
   
 
-  const [emailUsername, setEmailUsername] = useState(true)
+  const [emailUsername, setEmailUsername] = useState('true')
   const [passwordVisibility, setPasswordVisibility] = useState(false)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -86,7 +86,7 @@ const Signing = () => {
               <div className="border gap-2"></div>
               <input
                 className="w-full outline-none"
-                type={emailUsername ? "text" : "email"}
+                type={emailUsername ? 'text' : 'email'}
                 onChange={(e)=>setEmail(e.target.value)}
                 placeholder="Enter Username or Email"
                 required
